@@ -41,7 +41,6 @@ For example:
 dataLinks:
   - name: sys-logs
     class: com.windhoverlabs.yamcs.cfs.sys_log.CfsSysLogPlugin
-    eventStream: events_realtime
     stream: tm_realtime
     buckets: ["cfdpDown"]
     CFE_FS_ES_SYSLOG_SUBTYPE: 2
