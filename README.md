@@ -15,8 +15,7 @@ sys logs by removing the `CFE_FS_Header_t`  and dumping the contents to a text f
 - `Ubuntu 16/18/20`
 
 ### To Build <a name="to_build"></a>
-
-Makes an assumption that error log entries look like this structure:
+```
 mvn install -DskipTests
 ```
 
