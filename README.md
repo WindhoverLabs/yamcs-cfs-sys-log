@@ -49,7 +49,7 @@ dataLinks:
 ```
 
 
-### EVS CSV Mode API
+### CSV Mode API
 
 ```python
 import requests
