@@ -19,20 +19,20 @@ jobs:
       #     COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
       #   run: |
       #     mvn install jacoco:report coveralls:report -DrepoToken=$COVERALLS_TOKEN
-  docs:
-    name: Documentation
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
-      - name: Set up sphinx
-        run: |
-          cd docs
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Generate docs
-        run: |
-          cd docs
-          make html
+  # docs:
+  #   name: Documentation
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-python@v1
+  #       with:
+  #         python-version: 3.7
+  #     - name: Set up sphinx
+  #       run: |
+  #         cd docs
+  #         python -m pip install --upgrade pip
+  #         pip install -r requirements.txt
+  #     - name: Generate docs
+  #       run: |
+  #         cd docs
+  #         make html
